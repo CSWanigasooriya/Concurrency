@@ -1,14 +1,18 @@
+package lesson4;
+
+import lesson1.CareerMindedWife;
+import lesson1.HouseBasedHusband;
 import util.ANSI;
 
 /**
- * Issues faced with shared resources.
+ * Apply producer/consumer to CMW & HBH
  */
-public class LessonOne {
+public class LessonFour {
     public void execute() {
         double defaultBalance = 0;
         String accountNumber = "-";
         printAccountDetails(defaultBalance, accountNumber);
-        BankAccount bankAccount = new BankAccount(defaultBalance, accountNumber);
+        BankAccountMonitor bankAccount = new BankAccountMonitor(defaultBalance, accountNumber);
         Runnable hbhRunnable = new HouseBasedHusband(bankAccount);
         Thread hbhThread = new Thread(hbhRunnable, "House Based Husband");
         Thread cmwThread = new CareerMindedWife(bankAccount, "Career Minded Wife");

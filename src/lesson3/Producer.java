@@ -1,3 +1,5 @@
+package lesson3;
+
 import util.ANSI;
 
 public class Producer implements Runnable {

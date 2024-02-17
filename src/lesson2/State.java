@@ -1,3 +1,5 @@
+package lesson2;
+
 import util.ANSI;
 
 public class State implements Runnable {

@@ -1,5 +1,7 @@
+package lesson3;
+
 /**
- * Producer/Consumer
+ * lesson3.Producer/lesson3.Consumer
  */
 public class LessonThree {
     MailBox mailBox = new MailBox();
@@ -7,8 +9,8 @@ public class LessonThree {
     Thread producer;
 
     public void execute() {
-        this.consumer = new Thread(new Consumer(mailBox), "Consumer Thread");
-        this.producer = new Thread(new Producer(mailBox), "Producer Thread");
+        this.consumer = new Thread(new Consumer(mailBox), "lesson3.Consumer Thread");
+        this.producer = new Thread(new Producer(mailBox), "lesson3.Producer Thread");
         producer.start();
         consumer.start();
         for (int i = 0; i <= 20; i++) {

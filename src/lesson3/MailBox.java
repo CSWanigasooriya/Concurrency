@@ -1,10 +1,12 @@
+package lesson3;
+
 public class MailBox {
     private int counter = 0;
     private int value;
     private boolean locked = false;
 
     public synchronized void put(int value) {
-        while (this.locked) { // Producer must wait until the consumer consumes
+        while (this.locked) { // lesson3.Producer must wait until the consumer consumes
             try {
                 wait(); // will be called by the current thread, producer will go into WAITING state.
             } catch (InterruptedException e) {
@@ -12,7 +14,7 @@ public class MailBox {
             }
         }
 
-        // Consumer has consumed and set availability to false.
+        // lesson3.Consumer has consumed and set availability to false.
         this.counter++;
         this.value = value;
         this.locked = true;

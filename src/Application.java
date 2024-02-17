@@ -1,18 +1,25 @@
+import lesson1.LessonOne;
+import lesson5.LessonFive;
+import lesson6.LessonSix;
+
 public class Application {
     public static void main(String[] args) {
-        LessonOne one = new LessonOne();
+        //LessonOne one = new LessonOne();
 //        one.execute();
 
-        //LessonTwo two = new LessonTwo(true);
+        //lesson2.LessonTwo two = new lesson2.LessonTwo(true);
         //two.execute();
 
-        //LessonThree three = new LessonThree();
+        //lesson3.LessonThree three = new lesson3.LessonThree();
         //three.execute();
 
-        //LessonFour four = new LessonFour();
+        //lesson4.LessonFour four = new lesson4.LessonFour();
         //four.execute();
 
-        LessonFive five = new LessonFive();
-        five.execute();
+        //LessonFive five = new LessonFive();
+        //five.execute();
+
+        LessonSix six = new LessonSix();
+        six.execute();
     }
 }

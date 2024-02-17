@@ -1,3 +1,8 @@
+package lesson1;
+
+import lesson1.BankAccount;
+import lesson4.BankAccountMonitor;
+
 public class CareerMindedWife extends Thread {
     private BankAccount bankAccount;
 

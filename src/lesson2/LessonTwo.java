@@ -1,3 +1,5 @@
+package lesson2;
+
 import util.ANSI;
 
 /**
@@ -52,6 +54,6 @@ public class LessonTwo {
     }
 
     private void printState(Thread thread) {
-        System.out.println(ANSI.ANSI_BLUE.getAnsiCode() + "Name: " + thread.getName() + ANSI.ANSI_RESET.getAnsiCode() + ANSI.ANSI_GREEN.getAnsiCode() + " State: " + thread.getState() + ANSI.ANSI_RESET.getAnsiCode());
+        System.out.println(ANSI.ANSI_BLUE.getAnsiCode() + "Name: " + thread.getName() + ANSI.ANSI_RESET.getAnsiCode() + ANSI.ANSI_GREEN.getAnsiCode() + " lesson2.State: " + thread.getState() + ANSI.ANSI_RESET.getAnsiCode());
     }
 }
