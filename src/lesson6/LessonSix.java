@@ -34,20 +34,18 @@ public class LessonSix {
         int activeThreadCount = groups[0].activeCount();
         int activeThreadGroupCount = groups[0].activeGroupCount();
 
-        Thread[] activeThreads = new Thread[activeThreadCount];
+        Thread[] activeThreads = new Thread[activeThreadCount * 2];
         groups[0].enumerate(activeThreads, true);
 
         for (Thread thread : activeThreads) {
-            if (thread != null)
-                System.out.println(thread.getName());
+            if (thread != null) System.out.println("Active Thread: " + thread.getName());
         }
 
-        ThreadGroup[] threadGroups = new ThreadGroup[activeThreadGroupCount];
+        ThreadGroup[] threadGroups = new ThreadGroup[activeThreadGroupCount * 2];
         groups[0].enumerate(threadGroups, true);
 
         for (ThreadGroup threadGroup : threadGroups) {
-            if (threadGroup != null)
-                System.out.println(threadGroup.getName());
+            if (threadGroup != null) System.out.println("Active Group: " + threadGroup.getName());
         }
     }
 }
